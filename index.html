@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Meta Tags -->
+  <title>Nexus // OS — Next-Generation Autonomous Intelligence & Cognitive Canvas</title>
+  <meta name="description" content="Orchestrate complex AI workflows, autonomous agent swarms, and distributed low-latency compute at the speed of light. Built for frontier engineers and researchers.">
+  <meta name="keywords" content="autonomous agents, AI canvas, neural compute, low latency, distributed systems, quantum safe">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nexus // OS — The Next-Gen Cognitive Canvas">
+  <meta property="og:description" content="Orchestrate ideas at the speed of light. Autonomous agent swarms and sub-millisecond edge consensus.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Blobs & Grid Pattern -->
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="mesh-blob blob-1"></div>
+    <div class="mesh-blob blob-2"></div>
+    <div class="mesh-blob blob-3"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="main-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="Nexus OS Home">
+        <div class="logo-symbol">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span>NEXUS</span>
+        <span class="logo-badge">v3.4</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active" id="nav-link-hero">Home</a></li>
+          <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="#features" class="nav-link" id="nav-link-features">Features</a></li>
+          <li><a href="#connect" class="nav-link" id="nav-link-connect">Connect</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#features" class="btn btn-secondary btn-sm" id="nav-btn-docs">Docs</a>
+        <a href="#connect" class="btn btn-primary btn-sm btn-glow" id="nav-btn-launch">Launch Studio</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =====================================================================
+         Hero Section
+         ===================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        
+        <div class="hero-content">
+          <a href="#about" class="hero-pill-badge" id="hero-announcement-pill">
+            <span class="badge-highlight">NEW</span>
+            <span>Nexus 3.4 is Live • Autonomous Agent Swarms</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+
+          <h1 class="hero-title">
+            Orchestrate Ideas at the <br>
+            <span class="gradient-text">Speed of Light</span>
+          </h1>
+
+          <p class="hero-description">
+            The unified cognitive canvas and distributed synthesis engine. Transform complex multidimensional logic into autonomous, self-healing machine intelligence in sub-15ms latency.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#connect" class="btn btn-primary btn-glow" id="hero-cta-primary">
+              <span>Start Building Free</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <button class="btn btn-secondary open-demo-modal" id="hero-cta-demo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Explore Architecture</span>
+            </button>
+          </div>
+
+          <div class="hero-stats-banner">
+            <div class="stat-item">
+              <div class="stat-value stat-number" data-target="250" data-suffix="K+">250K+</div>
+              <div class="stat-label">Active Engineers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value stat-number" data-target="12" data-prefix="<" data-suffix="ms">&lt;12ms</div>
+              <div class="stat-label">P99 Edge Latency</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value stat-number" data-target="99" data-suffix=".99%">99.99%</div>
+              <div class="stat-label">Consensus Uptime</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value stat-number" data-target="120" data-suffix="+">120+</div>
+              <div class="stat-label">Global Clusters</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Hero Card Preview -->
+        <div class="hero-showcase-wrapper">
+          
+          <!-- Floating Interactive HUD Badge 1 -->
+          <div class="hud-badge hud-top-left" id="hud-revenue">
+            <div class="hud-title">Real-Time Throughput</div>
+            <div class="hud-value-row">
+              <span class="hud-value">4.8 TB/s</span>
+              <span class="hud-tag-green">+38.4%</span>
+            </div>
+          </div>
+
+          <!-- Floating Interactive HUD Badge 2 -->
+          <div class="hud-badge hud-bottom-right" id="hud-agents">
+            <div class="hud-title">Active Neural Mesh</div>
+            <div class="hud-value-row">
+              <span class="hud-value">18,492 Nodes</span>
+              <span class="hud-tag-green">Synced</span>
+            </div>
+          </div>
+
+          <!-- Glassmorphic Dashboard Window -->
+          <div class="hero-showcase-card" id="hero-showcase-card">
+            <div class="showcase-header-bar">
+              <div class="window-dots">
+                <span class="window-dot dot-red"></span>
+                <span class="window-dot dot-yellow"></span>
+                <span class="window-dot dot-green"></span>
+              </div>
+              <div class="window-title">
+                <span class="live-indicator"></span>
+                <span>nexus-core.cluster-01.us-west.mesh [LIVE]</span>
+              </div>
+              <div class="window-metrics">
+                <span>CPU: 18%</span>
+                <span>MEM: 24.2GB</span>
+              </div>
+            </div>
+
+            <div class="hero-image-container">
+              <img src="assets/hero_dashboard.jpg" alt="Nexus OS Cybernetic Dashboard UI showcasing real-time neural network visualizations, modular metrics, and dark glassmorphic interface" class="hero-dashboard-img" loading="eager" width="1200" height="675">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         About Section
+         ===================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="pulse-dot"></span>
+            <span>01 // ARCHITECTURE & VISION</span>
+          </div>
+          <h2>Designed for the Age of <span class="gradient-purple-cyan">Collective Intelligence</span></h2>
+          <p>
+            Nexus was conceived to dismantle traditional compute silos. By fusing distributed memory grids with autonomous reasoning layers, we empower developers to orchestrate planetary-scale intelligence effortlessly.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <div class="about-narrative">
+            <h3>Beyond Linear Pipelines: <br>Self-Balancing Autonomous Topology</h3>
+            <p>
+              Traditional systems suffer from serial bottlenecks and fragile state transitions. Nexus OS treats every agent, prompt, and database vector as a living cell in a self-healing neural mesh.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-item active" id="pillar-edge">
+                <div class="pillar-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <div class="pillar-text">
+                  <h4>Sub-Millisecond Edge Consensus</h4>
+                  <p>State machines replicate instantaneously across 120+ points-of-presence without locking or serial latency degradation.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item" id="pillar-memory">
+                <div class="pillar-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <div class="pillar-text">
+                  <h4>Perpetual Context Memory</h4>
+                  <p>Native hierarchical vector compression retains multi-session intelligence and long-horizon context with zero hallucination drift.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item" id="pillar-security">
+                <div class="pillar-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <div class="pillar-text">
+                  <h4>Zero-Trust Hardware Enclaves</h4>
+                  <p>Code and embeddings execute inside cryptographic confidential VMs with verifiable mathematical zero-knowledge proofs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Neural Core Visual Showcase -->
+          <div class="about-visual-card">
+            <div class="core-sphere-frame">
+              <div class="orbit-ring">
+                <div class="orbit-satellite"></div>
+              </div>
+              <div class="core-sphere-inner">
+                <img src="assets/about_neural_core.jpg" alt="Holographic 3D AI neural core sphere glowing with violet and cyan light filaments" loading="lazy" width="280" height="280">
+              </div>
+            </div>
+
+            <div class="core-status-panel">
+              <div class="core-stat">
+                <span class="core-stat-val">1.4 PFLOPS</span>
+                <span class="core-stat-label">Cluster Compute</span>
+              </div>
+              <div class="core-stat">
+                <span class="core-stat-val">99.999%</span>
+                <span class="core-stat-label">Mesh Stability</span>
+              </div>
+              <div class="core-stat">
+                <span class="core-stat-val">2.8B</span>
+                <span class="core-stat-label">Vectors/Sec</span>
+              </div>
+            </div>
+
+            <button class="btn btn-secondary btn-sm" id="btn-ping-core" onclick="showToast('Core harmonics synchronized. 18,492 nodes active.', 'success')">
+              <span class="pulse-dot"></span>
+              <span>Audit Neural Telemetry</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         Features Section
+         ===================================================================== -->
+    <section class="features-section" id="features">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="pulse-dot"></span>
+            <span>02 // CAPABILITIES & BENTO</span>
+          </div>
+          <h2>Engineered for <span class="gradient-text">Exponential Velocity</span></h2>
+          <p>
+            Explore modular primitives created for modern high-performance engineering teams. Everything you need to construct, evaluate, and scale autonomous workloads.
+          </p>
+        </div>
+
+        <div class="features-bento-grid">
+          
+          <!-- Bento Card 1: Autonomous Agent Swarms (Span 2) -->
+          <article class="bento-card bento-span-2" id="feature-swarms">
+            <div>
+              <div class="bento-icon-wrapper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="bento-title">Autonomous Agent Swarm Orchestrator</h3>
+              <p class="bento-desc">
+                Dispatch concurrent task groups with deterministic self-reflection. Agents plan, verify, and auto-correct across heterogeneous model runtimes.
+              </p>
+            </div>
+
+            <!-- Interactive Terminal Simulation Widget -->
+            <div class="swarm-widget">
+              <div class="swarm-control-bar">
+                <button class="swarm-task-btn active" data-task="code" id="btn-task-code">Synthesize Code</button>
+                <button class="swarm-task-btn" data-task="audit" id="btn-task-audit">Audit Security</button>
+                <button class="swarm-task-btn" data-task="vector" id="btn-task-vector">Vector Index</button>
+              </div>
+              <div class="swarm-terminal" id="swarm-terminal">
+                <div class="terminal-line">[SYSTEM] Allocating Agent Cluster: 12 workers ready</div>
+                <div class="terminal-line">[SYNAPSE] Parsing AST and inferring dependency graph...</div>
+                <div class="terminal-line" style="color: #10b981; font-weight: bold;">✔ Build successful: compiled in 118ms (0 warnings)</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bento Card 2: Sub-15ms Latency Engine -->
+          <article class="bento-card" id="feature-latency">
+            <div>
+              <div class="bento-icon-wrapper emerald">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="bento-title">Ultra-Low Latency</h3>
+              <p class="bento-desc">
+                Zero cold starts. Sub-15ms time-to-first-token worldwide via direct memory bus virtualization.
+              </p>
+            </div>
+
+            <!-- Interactive Latency Meter Widget -->
+            <div class="latency-meter-widget">
+              <div class="latency-display">
+                <span class="latency-number" id="latency-val">11</span>
+                <span class="latency-unit">ms P99</span>
+              </div>
+              <div class="latency-bars" id="latency-bars">
+                <div class="lat-bar active" style="height: 65%;"></div>
+                <div class="lat-bar active" style="height: 85%;"></div>
+                <div class="lat-bar active" style="height: 55%;"></div>
+                <div class="lat-bar active" style="height: 70%;"></div>
+              </div>
+              <button class="btn btn-secondary btn-sm" id="ping-edge-btn" style="width: 100%;">
+                <span>Ping Edge Clusters</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Bento Card 3: Quantum-Safe Cryptography -->
+          <article class="bento-card" id="feature-crypto">
+            <div>
+              <div class="bento-icon-wrapper purple">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="bento-title">Post-Quantum Enclaves</h3>
+              <p class="bento-desc">
+                ML-KEM and Kyber-1024 encryption guarantees immunity against future quantum computational decryption.
+              </p>
+            </div>
+
+            <!-- Interactive Cipher Scrambler -->
+            <div class="cipher-widget">
+              <div class="cipher-stream" id="cipher-stream-text">0x7B9C::STREAM_INIT</div>
+              <button class="btn btn-secondary btn-sm cipher-toggle-btn" id="toggle-cipher-btn">Lock Hardware Enclave</button>
+            </div>
+          </article>
+
+          <!-- Bento Card 4: Infinite Canvas & Multi-modal IO -->
+          <article class="bento-card" id="feature-canvas">
+            <div>
+              <div class="bento-icon-wrapper pink">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+              </div>
+              <h3 class="bento-title">Infinite Spatial Canvas</h3>
+              <p class="bento-desc">
+                Visual prompt engineering, state diffing, and real-time multiplayer node collaboration with live branching trees.
+              </p>
+            </div>
+
+            <div style="background: rgba(0,0,0,0.3); border-radius: var(--radius-sm); padding: 14px; border: 1px dashed var(--border-subtle); text-align: center;">
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-pink);">
+                ❖ 3,420 Nodes Rendered in 60 FPS
+              </span>
+            </div>
+          </article>
+
+          <!-- Bento Card 5: Global Edge Mesh (Span 2) -->
+          <article class="bento-card bento-span-2" id="feature-mesh">
+            <div>
+              <div class="bento-icon-wrapper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="2" x2="12" y2="6"></line>
+                  <line x1="12" y1="18" x2="12" y2="22"></line>
+                  <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                  <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                  <line x1="2" y1="12" x2="6" y2="12"></line>
+                  <line x1="18" y1="12" x2="22" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="bento-title">Decentralized Global Edge Mesh</h3>
+              <p class="bento-desc">
+                Deploy with a single command to 120+ points of presence. Traffic routes dynamically to the nearest GPU clusters with zero ingress fees and instant cold-swap failover.
+              </p>
+            </div>
+
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px;">
+              <span class="hero-pill-badge" style="margin-bottom: 0;">🌐 US-East (Virginia)</span>
+              <span class="hero-pill-badge" style="margin-bottom: 0;">🌐 EU-Central (Frankfurt)</span>
+              <span class="hero-pill-badge" style="margin-bottom: 0;">🌐 AP-Northeast (Tokyo)</span>
+              <span class="hero-pill-badge" style="margin-bottom: 0;">🌐 SA-East (São Paulo)</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         Connect Section
+         ===================================================================== -->
+    <section class="connect-section" id="connect">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="pulse-dot"></span>
+            <span>03 // GET IN TOUCH & ECOSYSTEM</span>
+          </div>
+          <h2>Connect with <span class="gradient-purple-cyan">Nexus Core</span></h2>
+          <p>
+            Whether you are migrating enterprise mission-critical infrastructure, conducting frontier AI research, or building your first agent swarm, we are ready.
+          </p>
+        </div>
+
+        <div class="connect-wrapper">
+          
+          <!-- Interactive Transmission Form -->
+          <div class="transmission-card" id="transmission-box">
+            <div class="form-header">
+              <h3>Initiate Secure Transmission</h3>
+              <p>Direct communication channel with our systems architecture team.</p>
+            </div>
+
+            <form id="transmission-form" novalidate>
+              <div class="form-group-row">
+                <div class="form-field">
+                  <label for="sender-name" class="field-label">
+                    <span>Full Name *</span>
+                  </label>
+                  <input type="text" id="sender-name" class="field-input" placeholder="e.g. Dr. Alex Mercer" required>
+                </div>
+
+                <div class="form-field">
+                  <label for="sender-email" class="field-label">
+                    <span>Work Email *</span>
+                  </label>
+                  <input type="email" id="sender-email" class="field-input" placeholder="alex@frontier-lab.ai" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="transmission-topic" class="field-label">
+                  <span>Inquiry Scope</span>
+                </label>
+                <select id="transmission-topic" class="field-select">
+                  <option value="enterprise">Enterprise Infrastructure & SLA</option>
+                  <option value="research">Frontier Research & Grant Program</option>
+                  <option value="api-access">API Early Access & Rate Limiting</option>
+                  <option value="community">Developer Relations & Community</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="sender-message" class="field-label">
+                  <span>Message Payload *</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem;">TLS 1.3 Encrypted</span>
+                </label>
+                <textarea id="sender-message" class="field-textarea" placeholder="Tell us about your computational workloads, latency constraints, or architectural objectives..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-glow form-submit-btn" id="form-submit-btn">
+                <span>Transmit Signal</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-success-banner" id="form-success-banner">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div>
+                  <strong>Signal Confirmed!</strong>
+                  <div style="font-size: 0.85rem; margin-top: 2px;">
+                    Handshake recorded under token <span class="transmission-code" style="font-family: var(--font-mono); font-weight: bold;">#NX-8821</span>. Our core team will reply within 4 hours.
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Community & Global Hubs Side -->
+          <div class="connect-info-panel">
+            
+            <!-- Global Developer Collective -->
+            <div class="info-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>Join Global Collective</span>
+              </h4>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 18px;">
+                Connect directly with 40,000+ distributed systems researchers and builders on our verified communication channels.
+              </p>
+
+              <div class="social-links-grid">
+                <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-button" id="social-discord">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                  </svg>
+                  <span>Discord</span>
+                  <span class="social-badge">14.2k</span>
+                </a>
+
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-button" id="social-github">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                  <span class="social-badge">★ 34k</span>
+                </a>
+
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-button" id="social-x">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  <span>X / Twitter</span>
+                  <span class="social-badge">@nexus</span>
+                </a>
+
+                <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="social-button" id="social-telegram">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Telegram</span>
+                  <span class="social-badge">Devs</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Global Node Locations & Clocks -->
+            <div class="info-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Global Operational Nodes</span>
+              </h4>
+
+              <div class="hubs-list">
+                <div class="hub-row">
+                  <div class="hub-city">
+                    <span class="live-indicator"></span>
+                    <span>San Francisco Hub</span>
+                  </div>
+                  <span class="hub-time" id="clock-sf">--:--:-- PST</span>
+                </div>
+
+                <div class="hub-row">
+                  <div class="hub-city">
+                    <span class="live-indicator"></span>
+                    <span>London Edge Core</span>
+                  </div>
+                  <span class="hub-time" id="clock-london">--:--:-- GMT</span>
+                </div>
+
+                <div class="hub-row">
+                  <div class="hub-city">
+                    <span class="live-indicator"></span>
+                    <span>Tokyo Supercluster</span>
+                  </div>
+                  <span class="hub-time" id="clock-tokyo">--:--:-- JST</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Newsletter Box -->
+            <div class="info-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Intelligence Dispatch</span>
+              </h4>
+              <p style="color: var(--text-muted); font-size: 0.88rem;">
+                Monthly deep-dives on distributed multi-agent systems, synthetic consensus, and hardware acceleration.
+              </p>
+              <form class="newsletter-form" id="newsletter-form">
+                <input type="email" class="newsletter-input" id="newsletter-email" placeholder="engineer@domain.com" required>
+                <button type="submit" class="btn btn-secondary btn-sm" id="btn-subscribe">Subscribe</button>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       Footer
+       ===================================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <div class="logo-symbol">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span>NEXUS</span>
+          </a>
+          <p>
+            Autonomous intelligence infrastructure engineered for microsecond latency and planetary-scale consensus.
+          </p>
+          <div style="margin-top: 16px; display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-emerald);">
+            <span class="live-indicator"></span>
+            <span>All Global Systems Nominal</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Cognitive Canvas</a></li>
+            <li><a href="#features" class="footer-link">Agent Swarms</a></li>
+            <li><a href="#about" class="footer-link">Sub-15ms Consensus</a></li>
+            <li><a href="#about" class="footer-link">Hardware Enclaves</a></li>
+            <li><a href="#features" class="footer-link">Edge Clusters</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">Architecture Whitepaper</a></li>
+            <li><a href="#features" class="footer-link">SDK Documentation</a></li>
+            <li><a href="#connect" class="footer-link">Benchmarks & Telemetry</a></li>
+            <li><a href="#connect" class="footer-link">Security Audits</a></li>
+            <li><a href="#connect" class="footer-link">Changelog v3.4</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Collective</h5>
+          <ul class="footer-links">
+            <li><a href="#connect" class="footer-link">Community Discord</a></li>
+            <li><a href="#connect" class="footer-link">GitHub Repository</a></li>
+            <li><a href="#connect" class="footer-link">X / Twitter</a></li>
+            <li><a href="#connect" class="footer-link">Research Fellowships</a></li>
+            <li><a href="#connect" class="footer-link">Careers (Hiring!)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Nexus Systems Inc. Distributed under Apache 2.0 & Sovereign Enclave License.
+        </div>
+        <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          <span>Return to Top</span>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       Interactive Architecture Preview Modal
+       ===================================================================== -->
+  <div class="modal-overlay" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+        <span class="logo-symbol" style="width: 32px; height: 32px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+          </svg>
+        </span>
+        <h3 id="modal-title" style="font-size: 1.4rem;">Nexus Core Architecture Spec</h3>
+      </div>
+
+      <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+        Nexus combines low-level Rust execution nodes with decentralized WebAssembly sandboxes. Every node verifies cryptographic states via zero-knowledge consensus before routing instructions to hardware enclaves.
+      </p>
+
+      <div style="background: #05080e; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 16px; font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 24px;">
+        <div style="color: var(--primary);">[TOPOLOGY-VERIFY] 18,492 Nodes Active across 120 Regions</div>
+        <div style="color: var(--text-muted); margin-top: 4px;">↳ Consensus Round #982,109: Consensus latency 2.4ms</div>
+        <div style="color: var(--accent-emerald); margin-top: 4px;">✔ Cryptographic Enclave: Hardware Root-of-Trust Certified</div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 12px;">
+        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('demo-modal').classList.remove('active')">Close</button>
+        <a href="#connect" class="btn btn-primary btn-sm" onclick="document.getElementById('demo-modal').classList.remove('active')">Schedule Deep Dive</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container Placeholder -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript Entry Point -->
+  <script src="app.js"></script>
+</body>
+</html>
